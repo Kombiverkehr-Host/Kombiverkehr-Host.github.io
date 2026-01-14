@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support Auswahl</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f4f6f8;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #666;
+            margin-bottom: 40px;
+            font-size: 18px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 600px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px; /* Abstand zwischen den Buttons */
+        }
+
+        .call-card {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 30px;
+            border-radius: 12px;
+            text-decoration: none;
+            color: white;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .call-card:active {
+            transform: scale(0.98);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .text-content {
+            text-align: left;
+        }
+
+        .title {
+            display: block;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .number {
+            display: block;
+            font-size: 16px;
+            opacity: 0.9;
+        }
+
+        .icon {
+            font-size: 40px;
+        }
+
+        /* Design für Künz (Dunkelblau/Firmenfarbe) */
+        .kuenz {
+            background: linear-gradient(135deg, #004C97 0%, #003366 100%);
+        }
+
+        /* Design für Duisburg (Neutrals Grau oder Akzentfarbe, hier Dunkelgrau/Orange für Kontrast) */
+        .duisburg {
+            background: linear-gradient(135deg, #4A5568 0%, #2D3748 100%);
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Wichtige Kontakte</h1>
+    <p>Bitte wählen Sie den gewünschten Bereich:</p>
+
+    <div class="container">
+        
+        <a href="tel:+4355746883148" class="call-card kuenz">
+            <div class="text-content">
+                <span class="title">Helpdesk Künz</span>
+                <span class="number">+43 557 46883148</span>
+            </div>
+            <span class="icon">📞</span>
+        </a>
+
+        <a href="tel:+492037138786561" class="call-card duisburg">
+            <div class="text-content">
+                <span class="title">Leitstelle Duisburg</span>
+                <span class="number">+49 203 7138786561</span>
+            </div>
+            <span class="icon">🚛</span>
+        </a>
+
+    </div>
+
+</body>
+</html>
